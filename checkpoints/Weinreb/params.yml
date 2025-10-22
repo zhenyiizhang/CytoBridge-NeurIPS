@@ -1,0 +1,33 @@
+apply_losses_in_time: true
+batches: 100
+criterion: ot1
+cuda: true
+dataset: file
+epochs: 15
+geo_features: 5
+geo_layers:
+- 32
+hinge_value: 0.01
+hold_one_out: true
+hold_out: random
+lambda_density: 1.0
+lambda_density_local: 1.0
+lambda_global: 0.8
+lambda_local: 0.2
+local_epochs: 5
+local_post_epochs: 5
+model_layers:
+- 64
+n_bins: 100
+n_points: 100
+n_trajectories: 30
+name: Weinreb
+num_particles: 16
+output_dir: /lustre/home/2501111653/CytoBridge-NeurIPS/results
+sample_size: 100
+sample_with_replacement: false
+time_col: null
+top_k: 5
+use_density_loss: true
+use_geo: false
+use_local_density: false
